@@ -3,6 +3,10 @@
 import { useState } from 'react'
 import { MoreHorizontal, } from 'lucide-react'
 
+import blazersCourt from '@/app/images/blazers-court.jpg';
+import blazersLogo from '@/app/images/blazers-logo.jpg'
+import Image from 'next/image';
+
 export default function Component() {
   const [time, setTime] = useState('7:00 PM')
   const [date, setDate] = useState('Oct 23, 2024')
@@ -28,7 +32,7 @@ export default function Component() {
     <div className="flex-1 flex justify-center items-center p-4">
       <div className="relative w-full max-w-md border-[1px] border-[#6c6c6c] p-4">
         <div className="flex justify-between mb-6">
-          <img src="/blazers-logo.jpg" alt="Blazers" className="w-8 h-auto aspect-[73/88] object-contain" />
+          <Image src={blazersLogo} alt="Blazers" className="w-8 h-auto aspect-[73/88] object-contain" />
 
           <div className="flex flex-col">
             <input
@@ -47,7 +51,7 @@ export default function Component() {
         </div>
 
         <div className="overflow-hidden -mx-4">
-          <img src="/blazers-court.jpg" alt="Basketball court" className="w-full h-48 object-contain" />
+          <Image src={blazersCourt} alt="Basketball court" className="w-full h-48 object-contain" />
         </div>
 
         <div className="space-y-4">
