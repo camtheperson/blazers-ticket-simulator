@@ -32,74 +32,74 @@ export default function Component() {
     <div className="flex-1 flex justify-center items-center p-4">
       <div className="relative w-full max-w-md border-[1px] border-[#6c6c6c] p-4">
         <div className="flex justify-between mb-6">
-          <Image src={blazersLogo} alt="Blazers" className="w-8 h-auto aspect-[73/88] object-contain" />
+          <Image src={blazersLogo} alt="Blazers" className="w-7 h-auto aspect-[73/88] object-contain" />
 
-          <div className="flex flex-col">
+          <div className="flex flex-col justify-end">
             <input
               type="text"
               value={time}
               onChange={(e) => setTime(e.target.value)}
-              className="block bg-transparent text-white text-xs"
+              className="w-[100px] bg-transparent text-white text-xs"
             />
             <input
               type="text"
               value={date}
               onChange={(e) => setDate(e.target.value)}
-              className="block bg-transparent text-white text-sm" 
+              className="w-[100px] bg-transparent text-white text-sm" 
             />
           </div>
         </div>
 
-        <div className="overflow-hidden -mx-4">
-          <Image src={blazersCourt} alt="Basketball court" className="w-full h-48 object-contain" />
+        <div className="overflow-hidden -mx-4 mb-3">
+          <Image src={blazersCourt} alt="Basketball court" className="w-full object-contain" />
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 mb-[8vh]">
           <div>
-            <div className="text-gray-400 text-xs">MODA CENTER</div>
+            <div className="text-xs">MODA CENTER</div>
             <input
               type="text"
               value={team}
               onChange={(e) => setTeam(e.target.value)}
-              className="bg-transparent text-white text-2xl font-bold w-full"
+              className="bg-transparent text-white text-2xl w-full"
             />
           </div>
           <div className="flex justify-between">
             <div>
-              <div className="text-gray-400 text-xs">SEC</div>
+              <div className="text-xs">SEC</div>
               <input
                 type="text"
                 value={section}
                 onChange={(e) => setSection(e.target.value)}
-                className="bg-transparent text-white text-2xl font-bold w-16"
+                className="bg-transparent text-white text-2xl w-16"
               />
             </div>
             <div>
-              <div className="text-gray-400 text-xs">ROW</div>
+              <div className="text-xs">ROW</div>
               <input
                 type="text"
                 value={row}
                 onChange={(e) => setRow(e.target.value)}
-                className="bg-transparent text-white text-2xl font-bold w-16"
+                className="bg-transparent text-white text-2xl w-16"
               />
             </div>
             <div>
-              <div className="text-gray-400 text-xs">SEAT</div>
+              <div className="text-xs">SEAT</div>
               <input
                 type="text"
                 value={seat}
                 onChange={(e) => setSeat(e.target.value)}
-                className="bg-transparent text-white text-2xl font-bold w-16"
+                className="bg-transparent text-white text-2xl w-16"
               />
             </div>
           </div>
           <div>
-            <div className="text-gray-400 text-xs">ENTRY INFO</div>
+            <div className="text-xs">ENTRY INFO</div>
             <input
               type="text"
               value={entryInfo}
               onChange={(e) => setEntryInfo(e.target.value)}
-              className="bg-transparent text-white text-2xl font-bold w-full"
+              className="bg-transparent text-white text-2xl w-full"
             />
           </div>
         </div>
