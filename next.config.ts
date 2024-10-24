@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
-const isDev = process?.env?.NODE_ENV !== 'production';
+// const isDev = process?.env?.NODE_ENV !== 'production';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: isDev ? '' : '/blazers-ticket-simulator',
-  assetPrefix: isDev ? '' : '/blazers-ticket-simulator/',
+  basePath: 'blazers-ticket-simulator',
+  assetPrefix: '/blazers-ticket-simulator/',
   images: {
     unoptimized: true, 
   }
